@@ -12,8 +12,8 @@ scoreboard objectives add ai.SpeedY dummy
 scoreboard objectives add ai.PosZ dummy
 
 # // Some Boolean States or Flags:
-scoreboard objectives add ai.IsMining dummy
-scoreboard objectives add ai.IsPlacing dummy
+scoreboard objectives add ai.IsMiningOrAttacking dummy
+scoreboard objectives add ai.IsPlacingOrUsing dummy
 scoreboard objectives add ai.IsSneaking dummy
 # // Scoreboard checks if the AI is idle, walking, jumping, sprinting, walk+jump-ing or sprint+jump-ing
 # // Idle = 0;  Walking = 1; Sprinting = 2; Jumping = 3; Walk+Jumping = 4; Sprint+Jumping = 5
