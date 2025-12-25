@@ -1,3 +1,6 @@
+# // Accept Knockback
+execute if score @s ai.HurtTime matches 1.. run return fail
+
 # // for ID predicate.
 scoreboard players operation #ID ai.ID = @s ai.ID
 

@@ -24,6 +24,8 @@ scoreboard objectives add ai.JumpStrength dummy
 scoreboard objectives add ai.StepHeight dummy
 scoreboard objectives add ai.MaxDamage dummy
 scoreboard objectives add ai.Gravity dummy
+scoreboard objectives add ai.HurtTime dummy
+scoreboard objectives add ai.Reach dummy
 
 
 # ID Scoreboard

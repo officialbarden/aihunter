@@ -8,3 +8,6 @@ function ai:zprivate/entity/store/is_sneaking/init
 function ai:zprivate/entity/store/health/init
 function ai:zprivate/entity/store/rot/init
 function ai:zprivate/entity/store/pos/init
+
+# // Other
+function ai:zprivate/entity/store/hurt_time/init
