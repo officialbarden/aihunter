@@ -21,7 +21,7 @@ scoreboard objectives add ai.State dummy
 # // Technical Scoreboards (scaled x1000):
 scoreboard objectives add ai.MovementSpeed dummy
 scoreboard objectives add ai.JumpStrength dummy
-scoreboard objectives add ai.StepHeight dummy
+#scoreboard objectives add ai.StepHeight dummy
 scoreboard objectives add ai.MaxDamage dummy
 scoreboard objectives add ai.Gravity dummy
 scoreboard objectives add ai.HurtTime dummy
