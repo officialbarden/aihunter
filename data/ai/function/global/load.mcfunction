@@ -8,15 +8,36 @@ scoreboard objectives add ai.RotationX dummy
 scoreboard objectives add ai.RotationY dummy
 scoreboard objectives add ai.PosX dummy
 scoreboard objectives add ai.PosY dummy
+scoreboard objectives add ai.SpeedY dummy
 scoreboard objectives add ai.PosZ dummy
 
-# // Some Boolean States:
+# // Some Boolean States or Flags:
 scoreboard objectives add ai.IsMining dummy
 scoreboard objectives add ai.IsPlacing dummy
 scoreboard objectives add ai.IsSneaking dummy
 # // Scoreboard checks if the AI is idle, walking, jumping, sprinting, walk+jump-ing or sprint+jump-ing
 # // Idle = 0;  Walking = 1; Sprinting = 2; Jumping = 3; Walk+Jumping = 4; Sprint+Jumping = 5
 scoreboard objectives add ai.State dummy
+# // Technical Scoreboards (scaled x1000):
+scoreboard objectives add ai.MovementSpeed dummy
+scoreboard objectives add ai.JumpStrength dummy
+scoreboard objectives add ai.StepHeight dummy
+scoreboard objectives add ai.MaxDamage dummy
+scoreboard objectives add ai.Gravity dummy
+
+
+# ID Scoreboard
+scoreboard objectives add ai.ID dummy
+execute unless score .global ai.ID matches -2147483648..2147483647 run scoreboard players set .global ai.ID 1
+
+# Special Values Scoreboards (x1000)
+scoreboard objectives add ai.Values dummy
+scoreboard players set baseMovementSpeed ai.Values 100
+scoreboard players set baseSneakSpeed ai.Values 40
+scoreboard players set baseSprintSpeed ai.Values 350
+
+scoreboard objectives add ai.Constants dummy
+
 
 
 # // Scheduled Looping Files:

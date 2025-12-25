@@ -1,0 +1,2 @@
+execute if score @s ai.IsSneaking matches 0 run return run function ai:zprivate/entity/store/is_sneaking/off
+execute if score @s ai.IsSneaking matches 1 run function ai:zprivate/entity/store/is_sneaking/on
