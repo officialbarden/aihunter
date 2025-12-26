@@ -1,0 +1,6 @@
+{
+    "values": [
+        "ai:zprivate/entity/store/init",
+        "ai:zprivate/entity/actions/init"
+    ]
+}

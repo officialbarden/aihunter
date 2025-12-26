@@ -15,13 +15,21 @@ scoreboard objectives add ai.PosZ dummy
 scoreboard objectives add ai.IsMiningOrAttacking dummy
 scoreboard objectives add ai.IsPlacingOrUsing dummy
 scoreboard objectives add ai.IsSneaking dummy
+scoreboard objectives add ai.IsEatingOrDrinking dummy
 # // Scoreboard checks if the AI is idle, walking, jumping, sprinting, walk+jump-ing or sprint+jump-ing
 # // Idle = 0;  Walking = 1; Sprinting = 2; Jumping = 3; Walk+Jumping = 4; Sprint+Jumping = 5
 scoreboard objectives add ai.State dummy
 # // Technical Scoreboards (scaled x1000):
+scoreboard objectives add ai.ConsumingTimer dummy
 scoreboard objectives add ai.MovementSpeed dummy
 scoreboard objectives add ai.JumpStrength dummy
-#scoreboard objectives add ai.StepHeight dummy
+scoreboard objectives add ai.MiningSpeed dummy
+scoreboard objectives add ai.MiningDelay dummy
+scoreboard objectives add ai.PlacingSpeed dummy
+scoreboard objectives add ai.PlacingDelay dummy
+
+scoreboard objectives add ai.AttackSpeed dummy
+scoreboard objectives add ai.AttackDelay dummy
 scoreboard objectives add ai.MaxDamage dummy
 scoreboard objectives add ai.Gravity dummy
 scoreboard objectives add ai.HurtTime dummy
