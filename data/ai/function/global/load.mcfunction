@@ -48,6 +48,9 @@ scoreboard players set baseSprintSpeed ai.Values 350
 
 scoreboard objectives add ai.Constants dummy
 
+# // AI Registry Scoreboard
+scoreboard objectives add ai.Registry dummy
+scoreboard players add #Global ai.Registry 1
 
 
 # // Scheduled Looping Files:

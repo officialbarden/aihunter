@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Register an AI Hunter.."
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "NAME",
+      "width": 100,
+      "label": {
+        "text": "Name"
+      },
+      "label_visible": true,
+      "max_length": 16
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "DIFFICULTY",
+      "width": 100,
+      "label": {
+        "text": "Difficulty"
+      },
+      "start": 1,
+      "end": 4,
+      "step": 1,
+      "initial": 1
+    },
+    {
+      "type": "minecraft:text",
+      "key": "SKIN",
+      "width": 100,
+      "label": {
+        "text": "Skin ",
+        "extra": [
+          {
+            "text": "(IGN or txt val)",
+            "color": "#adadad"
+          }
+        ],
+        "color": "#e3d9d9"
+      },
+      "label_visible": true,
+      "max_length": 99999
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "SKIN_TYPE",
+      "width": 100,
+      "label": {
+        "text": "Skin Type"
+      },
+      "options": [
+        {
+          "id": "SLIM",
+          "display": {
+            "text": "Slim"
+          }
+        },
+        {
+          "id": "CLASSIC",
+          "display": {
+            "text": "Classic"
+          }
+        }
+      ]
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "actions": [
+    {
+      "label": "Add Hunter",
+      "width": 70,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "function ai:zprivate/register/init {NAME:\"$(NAME)\", DIFFICULTY:$(DIFFICULTY), SKIN:\"$(SKIN)\", SKIN_TYPE:$(SKIN_TYPE)}"
+      }
+    }
+  ]
+}

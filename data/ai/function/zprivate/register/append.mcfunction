@@ -1,0 +1,1 @@
+data modify storage ai:storage AI.REGISTRY append from storage ai:storage TEMP.AI.REGISTER
