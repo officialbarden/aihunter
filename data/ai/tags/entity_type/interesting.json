@@ -1,0 +1,13 @@
+{
+    "values": [
+        "player",
+        "zombie_villager",
+        "phantom",
+        "snow_golem",
+        "iron_golem",
+        "villager",
+        "witch",
+        "skeleton",
+        "wither_skeleton"
+    ]
+}

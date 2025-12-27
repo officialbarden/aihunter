@@ -3,6 +3,6 @@
         "ai:zprivate/entity/store/init",
         "ai:zprivate/entity/actions/init",
         "ai:zprivate/pathfind/move",
-        "ai:zprivate/look/init"
+        "ai:zprivate/look/turn"
     ]
 }

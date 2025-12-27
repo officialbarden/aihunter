@@ -56,3 +56,4 @@ scoreboard players add #Global ai.Registry 1
 # // Scheduled Looping Files:
 function ai:global/loop_1t
 function ai:global/loop_5t
+function ai:zprivate/look/random/loop
