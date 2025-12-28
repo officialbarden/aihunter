@@ -23,6 +23,7 @@ scoreboard objectives add ai.State dummy
 scoreboard objectives add ai.ConsumingTimer dummy
 scoreboard objectives add ai.MovementSpeed dummy
 scoreboard objectives add ai.JumpStrength dummy
+scoreboard objectives add ai.ClimbingSpeed dummy
 scoreboard objectives add ai.MiningSpeed dummy
 scoreboard objectives add ai.MiningDelay dummy
 scoreboard objectives add ai.PlacingSpeed dummy
@@ -42,9 +43,10 @@ execute unless score .global ai.ID matches -2147483648..2147483647 run scoreboar
 
 # Special Values Scoreboards (x1000)
 scoreboard objectives add ai.Values dummy
-scoreboard players set baseMovementSpeed ai.Values 100
+scoreboard players set baseMovementSpeed ai.Values 150
 scoreboard players set baseSneakSpeed ai.Values 40
 scoreboard players set baseSprintSpeed ai.Values 350
+scoreboard players set baseJumpStrength ai.Values 410
 
 scoreboard objectives add ai.Constants dummy
 
@@ -52,8 +54,10 @@ scoreboard objectives add ai.Constants dummy
 scoreboard objectives add ai.Registry dummy
 scoreboard players add #Global ai.Registry 1
 
+scoreboard objectives add ai.TurnSpeed dummy
 
 # // Scheduled Looping Files:
 function ai:global/loop_1t
 function ai:global/loop_5t
 function ai:zprivate/look/random/loop
+function ai:zprivate/entity/state/random

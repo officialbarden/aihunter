@@ -10,6 +10,7 @@ scoreboard players operation #ai.speed.X ai.Values *= @n[tag=ai.mannequin,predic
 scoreboard players operation #ai.speed.Z ai.Values *= @n[tag=ai.mannequin,predicate=ai:id,type=#ai:hunter] ai.MovementSpeed
 
 execute unless score #ai.speed.Y ai.Values matches ..0 run scoreboard players operation #ai.speed.Y ai.Values = @n[tag=ai.mannequin,predicate=ai:id,type=#ai:hunter] ai.JumpStrength
+execute as @n[tag=ai.mannequin,predicate=ai:id,type=#ai:hunter] at @s if block ~ ~ ~ #climbable unless score #ai.speed.Y ai.Values matches ..0 run scoreboard players operation #ai.speed.Y ai.Values = @s ai.ClimbingSpeed
 
 # // Create Motion NBT List (without Macros)
 data remove storage ai:storage TEMP.AI.MOTION_X

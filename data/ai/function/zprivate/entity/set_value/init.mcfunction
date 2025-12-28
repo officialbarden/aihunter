@@ -1,6 +1,7 @@
 # // Initialise.
-scoreboard players set @s ai.MovementSpeed 100
+scoreboard players set @s ai.MovementSpeed 200
 scoreboard players set @s ai.JumpStrength 410
+scoreboard players set @s ai.ClimbingSpeed 110
 scoreboard players set @s ai.MaxDamage 1000
 scoreboard players set @s ai.Reach 5000
 scoreboard players set @s ai.PlacingSpeed 5

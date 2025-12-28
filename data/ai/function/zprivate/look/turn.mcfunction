@@ -5,4 +5,7 @@ scoreboard players operation #ID ai.ID = @s ai.ID
 execute unless entity @n[tag=ai.LookVector,type=marker,predicate=ai:id] run return fail
 
 # // Turn:
-execute at @s anchored eyes rotated as @n[tag=ai.LookVector,predicate=ai:id,type=marker] positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^20 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
+execute unless score @s ai.TurnSpeed matches -2147483648..2147483647 store result score @s ai.TurnSpeed run random value 1..3
+execute if score @s ai.TurnSpeed matches 1 run function ai:zprivate/look/turn_speed/1
+execute if score @s ai.TurnSpeed matches 2 run function ai:zprivate/look/turn_speed/2
+execute if score @s ai.TurnSpeed matches 3 run function ai:zprivate/look/turn_speed/3
