@@ -1,6 +1,6 @@
 # // If doesn't have tag, don't run function file:
 execute unless entity @s[tag=ai.LookInDir] run return fail
-execute if entity @s[predicate=ai:bool/is_moving,tag=ai.LookInDir] run return run tag @s remove ai.LookInDir
+#execute if entity @s[predicate=ai:bool/is_moving,tag=ai.LookInDir] run return run tag @s remove ai.LookInDir
 
 scoreboard players operation #ID ai.ID = @s ai.ID
 execute unless entity @n[tag=ai.LookVector,type=marker,predicate=ai:id] run return fail

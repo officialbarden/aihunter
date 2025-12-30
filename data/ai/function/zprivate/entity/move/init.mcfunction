@@ -1,5 +1,5 @@
 # // Go Down Climbable Blocks
-execute facing entity @n[tag=ai.PathFound,predicate=ai:id,type=marker] feet positioned ^ ^ ^1 if block ~ ~ ~ #climbable run tp @s ^ ^ ^0.1
+#execute facing entity @n[tag=ai.PathFound,predicate=ai:id,type=marker] feet positioned ^ ^ ^1 if block ~ ~ ~ #climbable run tp @s ^ ^ ^0.1
 
 # // Accept Knockback
 execute if score @s ai.HurtTime matches 1.. run return fail

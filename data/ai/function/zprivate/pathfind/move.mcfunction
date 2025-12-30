@@ -4,5 +4,5 @@ execute unless entity @s[tag=ai.Move] run return fail
 scoreboard players operation #ID ai.ID = @s ai.ID
 execute at @s align y run kill @e[tag=ai.PathFound,predicate=ai:id,distance=..0.6,type=marker]
 
-execute at @s align y facing entity @n[tag=ai.PathFound,predicate=ai:id,type=marker] eyes if block ~ ~ ~ #ai:air run function ai:zprivate/entity/move/init
-execute at @s align y facing entity @n[tag=ai.PathFound,predicate=ai:id,type=marker] eyes unless block ~ ~ ~ #ai:air run return run function ai:zprivate/entity/move/init
+execute at @s align y facing entity @n[tag=ai.PathFound,predicate=ai:id,type=marker] eyes rotated ~ ~ if block ~ ~ ~ #ai:air run function ai:zprivate/entity/move/init
+execute at @s align y facing entity @n[tag=ai.PathFound,predicate=ai:id,type=marker] eyes rotated ~ ~ unless block ~ ~ ~ #ai:air run return run function ai:zprivate/entity/move/init

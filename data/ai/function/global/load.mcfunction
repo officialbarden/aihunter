@@ -54,7 +54,9 @@ scoreboard objectives add ai.Constants dummy
 scoreboard objectives add ai.Registry dummy
 scoreboard players add #Global ai.Registry 1
 
+# // Some Value Storing Scoreboards
 scoreboard objectives add ai.TurnSpeed dummy
+scoreboard objectives add ai.PathfindingDuration dummy
 
 # // Scheduled Looping Files:
 function ai:global/loop_1t
