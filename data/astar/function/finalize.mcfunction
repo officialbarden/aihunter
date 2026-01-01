@@ -1,4 +1,5 @@
-execute unless function astar:origin_has_origin run return run tag @s add astar.finished
+execute if entity @s[scores={astar.p=0}] run return run tag @s add astar.finished
 
 tag @s add astar.finished
-execute on origin at @s run function astar:finalize
+scoreboard players operation cur astar.p = @s astar.p
+execute as @n[type=marker,tag=astar,tag=!astar.finished,predicate=astar:is_parent] run function astar:finalize
