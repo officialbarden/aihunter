@@ -8,6 +8,10 @@
         "villager",
         "witch",
         "skeleton",
-        "wither_skeleton"
+        "wither_skeleton",
+        "armor_stand",
+        "item",
+        "painting",
+        "item_frame"
     ]
 }
