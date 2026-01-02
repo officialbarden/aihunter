@@ -5,5 +5,3 @@ kill @e[predicate=ai:id,tag=ai.PathFound,type=marker]
 
 # // Remove the ai.Move tag.
 tag @s remove ai.Move
-
-execute at @p run function ai:zprivate/pathfind/init
