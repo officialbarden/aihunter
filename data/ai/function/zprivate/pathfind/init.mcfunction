@@ -1,3 +1,4 @@
+
 # // Set A* Config:
 function ai:zprivate/pathfind/set_config
 

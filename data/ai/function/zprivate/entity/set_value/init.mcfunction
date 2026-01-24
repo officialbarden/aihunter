@@ -13,6 +13,8 @@ scoreboard players set @s ai.IsMiningOrAttacking 0
 scoreboard players set @s ai.IsPlacingOrUsing 0
 scoreboard players set @s ai.IsSneaking 0
 
+scoreboard players set @s ai.PathfindingDuration 0
+
 
 scoreboard players operation @s ai.ID = .global ai.ID
 scoreboard players add .global ai.ID 1

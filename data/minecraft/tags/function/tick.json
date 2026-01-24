@@ -1,5 +1,6 @@
 {
     "values": [
-        "ai:global/tick"
+        "ai:global/tick",
+        "ai:zprivate/pathfind/check_status"
     ]
 }

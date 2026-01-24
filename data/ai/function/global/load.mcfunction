@@ -1,5 +1,10 @@
 # // All important values are initalized here.
 
+# // Gamerules
+# maxCommandChainLength = 100,000
+gamerule maxCommandChainLength 100000
+
+
 # AI Entity Attributes:
 scoreboard objectives add ai.Health dummy
 scoreboard objectives add ai.Hunger dummy
@@ -59,7 +64,7 @@ scoreboard objectives add ai.TurnSpeed dummy
 scoreboard objectives add ai.PathfindingDuration dummy
 
 # // Scheduled Looping Files:
-function ai:global/loop_1t
+#function ai:global/loop_1t
 function ai:global/loop_5t
 function ai:zprivate/look/random/loop
 function ai:zprivate/entity/state/random

@@ -1,14 +1,12 @@
 # MACROS:
 # $(NAME) $(DIFFICULTY) $(SKIN) $(SKIN_TYPE)
 #$say $(NAME)
-#$say $(DIFFICULTY)
 #$say $(SKIN)
-#$say $(SKIN_TYPE)
 
 scoreboard players reset @s ai.TurnSpeed
 
 data remove storage ai:storage TEMP.AI.REGISTER
-$data modify storage ai:storage TEMP.AI.REGISTER set value {NAME:"$(NAME)", DIFFICULTY:$(DIFFICULTY), SKIN:"$(SKIN)", SKIN_TYPE:"$(SKIN_TYPE)"}
+$data modify storage ai:storage TEMP.AI.REGISTER set value {NAME:"$(NAME)", SKIN:"$(SKIN)"}
 function ai:zprivate/register/id
 function ai:zprivate/register/append
 execute store result score #Length ai.Constants run data get storage ai:storage TEMP.AI.REGISTER.SKIN
