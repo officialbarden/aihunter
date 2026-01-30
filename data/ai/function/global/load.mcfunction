@@ -2,8 +2,7 @@
 
 # // Gamerules
 # maxCommandChainLength = 100,000
-gamerule maxCommandChainLength 100000
-
+#gamerule maxCommandChainLength 100000#
 
 # AI Entity Attributes:
 scoreboard objectives add ai.Health dummy
@@ -54,6 +53,7 @@ scoreboard players set baseSprintSpeed ai.Values 350
 scoreboard players set baseJumpStrength ai.Values 410
 
 scoreboard objectives add ai.Constants dummy
+scoreboard players set -1 ai.Constants -1
 
 # // AI Registry Scoreboard
 scoreboard objectives add ai.Registry dummy
@@ -62,6 +62,9 @@ scoreboard players add #Global ai.Registry 1
 # // Some Value Storing Scoreboards
 scoreboard objectives add ai.TurnSpeed dummy
 scoreboard objectives add ai.PathfindingDuration dummy
+
+# // SmartMode scoreboards
+scoreboard objectives add ai.SmartMode.MATH dummy
 
 # // Scheduled Looping Files:
 #function ai:global/loop_1t

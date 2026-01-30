@@ -1,0 +1,7 @@
+The difference between the "move" directory and the "pathfind" directory is that,
+the "move" directory makes sure the AI directly pathfinds to final_position without trying to find a suitable path,
+whereas, "pathfind" makes sure it tries to find a suitable path.
+
+It's important to make "move" its own seperate module of the AI code because the pathfinder has been limited to specific parameters,
+so that it doesn't lag the game every time.
+

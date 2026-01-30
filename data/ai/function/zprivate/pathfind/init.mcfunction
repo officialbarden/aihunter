@@ -1,3 +1,6 @@
+tag @s remove ai.SmartMode
+scoreboard players reset @s ai.IsPlacingOrUsing
+scoreboard players reset @s ai.IsMiningOrAttacking
 
 # // Set A* Config:
 function ai:zprivate/pathfind/set_config

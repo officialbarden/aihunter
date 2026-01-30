@@ -1,0 +1,1 @@
+execute as @e[tag=astar.pathfinder] at @s if entity @e[tag=astar] run function astar:failed

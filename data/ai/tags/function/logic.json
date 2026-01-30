@@ -1,10 +1,12 @@
 {
     "values": [
+        "ai:zprivate/entity/smart/init",
         "ai:zprivate/entity/state/init",
         "ai:zprivate/entity/store/init",
         "ai:zprivate/entity/actions/init",
         "ai:zprivate/pathfind/move",
         "ai:zprivate/look/turn",
-        "ai:zprivate/look/advanced"
+        "ai:zprivate/look/advanced",
+        "ai:zprivate/entity/smart/disable"
     ]
 }
