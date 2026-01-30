@@ -1,6 +1,8 @@
 {
   "pack": {
     "description": "AI Player in Minecraft",
-    "pack_format": 88
+    "pack_format": 94,
+    "max_format": 999,
+    "min_format": 94
   }
 }
