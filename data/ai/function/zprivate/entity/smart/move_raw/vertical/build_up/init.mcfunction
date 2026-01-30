@@ -1,7 +1,7 @@
 # // Mine Blocks Above:
 #execute at @s positioned ~ ~2 ~ run particle end_rod ~ ~ ~ 0 0 0 0 10 force
 #execute at @s positioned ~ ~-1 ~ run particle end_rod ~ ~ ~ 0 0 0 0 10 force
-scoreboard players set @s ai.State 5
+scoreboard players set @s ai.State 2
 
 
 execute at @s[predicate=ai:on_ground] positioned ~ ~2 ~ unless block ~ ~ ~ #air run return run function ai:zprivate/entity/smart/move_raw/vertical/build_up/mine

@@ -13,3 +13,4 @@ scoreboard players set @s ai.PathfindingDuration 999999
 # // Move Tag:
 tag @s add ai.Move
 
+attribute @s step_height base set 1
