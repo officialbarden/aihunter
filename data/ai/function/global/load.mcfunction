@@ -40,6 +40,8 @@ scoreboard objectives add ai.Gravity dummy
 scoreboard objectives add ai.HurtTime dummy
 scoreboard objectives add ai.Reach dummy
 
+# MATH Scoreboard
+scoreboard objectives add ai.MATH dummy
 
 # ID Scoreboard
 scoreboard objectives add ai.ID dummy

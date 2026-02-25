@@ -1,6 +1,6 @@
 # // ID System
 scoreboard players operation #ID ai.ID = @s ai.ID
-
+say Couldn't do A*
 # // SmartMode enables the AI to Make Decisions
 tag @s add ai.SmartMode
 
