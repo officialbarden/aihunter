@@ -2,6 +2,7 @@ execute unless entity @s[tag=ai.SmartMode] run return fail
 
 tag @s remove ai.LookInDir
 tag @s remove ai.LookAtInterestingMob
+tag @s remove ai.LookAtPlayer
 
 # // ID System
 scoreboard players operation #ID ai.ID = @s ai.ID
