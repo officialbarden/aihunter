@@ -9,4 +9,3 @@ execute as @e[tag=!ai.Move, tag=ai.mannequin, type=#ai:hunter, scores={astar.sta
 execute as @e[tag=ai.mannequin, type=#ai:hunter, tag=!ai.values.ready] at @s run function ai:zprivate/entity/set_value/init
 # // Run Basic Logic:
 execute as @e[type=#ai:hunter, tag=ai.mannequin] at @s run function #ai:logic
-

@@ -3,6 +3,7 @@
 #$say $(NAME)
 #$say $(SKIN)
 
+
 scoreboard players reset @s ai.TurnSpeed
 
 data remove storage ai:storage TEMP.AI.REGISTER
