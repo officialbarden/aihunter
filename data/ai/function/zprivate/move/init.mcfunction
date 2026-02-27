@@ -7,6 +7,8 @@ tag @s add ai.SmartMode
 # // Give the Final Position a tag.
 tag @e[tag=ai.PathfindTo.ThisPosition, predicate=ai:id, type=marker] add ai.PathFound
 
+execute as @e[tag=ai.PathfindTo.ThisPosition] at @s run fill ~-2 ~ ~-2 ~2 ~ ~2 air replace structure_void strict
+
 # // Set ~inf pathfind duration.
 scoreboard players set @s ai.PathfindingDuration 999999
 

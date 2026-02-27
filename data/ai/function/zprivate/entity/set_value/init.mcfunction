@@ -9,6 +9,8 @@ scoreboard players set @s ai.AttackSpeed 30
 scoreboard players set @s ai.MiningSpeed 20
 scoreboard players set @s ai.ConsumingTimer 40
 
+scoreboard players operation @s ai.JumpDelay = baseJumpDelay ai.JumpDelay
+
 scoreboard players set @s ai.IsMiningOrAttacking 0
 scoreboard players set @s ai.IsPlacingOrUsing 0
 scoreboard players set @s ai.IsSneaking 0

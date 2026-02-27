@@ -7,7 +7,7 @@ execute store result score #DISPLACEMENT ai.MATH run data get storage ai:storage
 execute if score #DISPLACEMENT ai.MATH matches 15000.. run return run function ai:zprivate/pathfind/direct_path
 
 # // Fill Structure Void so that AI can parkour
-fill ~-3 ~ ~-3 ~3 ~ ~3 structure_void replace air strict
+fill ~-2 ~ ~-2 ~2 ~ ~2 structure_void replace air strict
 
 # // Run CJDev's A* Implementation:
 execute positioned ~ ~1 ~ align y run function astar:_
@@ -15,4 +15,4 @@ execute positioned ~ ~1 ~ align y run function astar:_
 execute as @e[tag=astar] at @s if block ~ ~-1 ~ structure_void run function ai:zprivate/pathfind/structure_void
 
 # // Remove Structure Void:
-fill ~-3 ~ ~-3 ~3 ~ ~3 air replace structure_void strict
+fill ~-2 ~ ~-2 ~2 ~ ~2 air replace structure_void strict

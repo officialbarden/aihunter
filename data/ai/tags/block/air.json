@@ -6,6 +6,7 @@
         "lever",
         "#pressure_plates",
         "#flowers",
-        "#flower_pots"
+        "#flower_pots",
+        "structure_void"
     ]
 }

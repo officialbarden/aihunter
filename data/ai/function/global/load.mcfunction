@@ -27,6 +27,7 @@ scoreboard objectives add ai.State dummy
 scoreboard objectives add ai.ConsumingTimer dummy
 scoreboard objectives add ai.MovementSpeed dummy
 scoreboard objectives add ai.JumpStrength dummy
+scoreboard objectives add ai.JumpDelay dummy
 scoreboard objectives add ai.ClimbingSpeed dummy
 scoreboard objectives add ai.MiningSpeed dummy
 scoreboard objectives add ai.MiningDelay dummy
@@ -53,6 +54,7 @@ scoreboard players set baseMovementSpeed ai.Values 150
 scoreboard players set baseSneakSpeed ai.Values 40
 scoreboard players set baseSprintSpeed ai.Values 350
 scoreboard players set baseJumpStrength ai.Values 410
+scoreboard players set baseJumpDelay ai.Values 2
 
 scoreboard objectives add ai.Constants dummy
 scoreboard players set -1 ai.Constants -1
